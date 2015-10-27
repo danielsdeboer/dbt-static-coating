@@ -142,18 +142,16 @@ body {
   // Wireframe
   @include wireframe(5%);
 
-  padding: 1.5% 0;
+  padding: 1.5% 2%;
 
   // Stuff that applies regardless of breakpoint
   h1 {
-    @include span-columns(12);
-
     color: $color-font-base;
     font-weight: $fweight-normal;
     line-height: 1;
+    padding-bottom: 1%;
     text-align: center;
     text-transform: none;
-
 
     a:link,
     a:active,
@@ -164,13 +162,11 @@ body {
     }
   }
 
-  img {
-    @include shift(5);
-    @include span-columns(2);
+  h2 {
+    @include span-columns(12);
 
-    height: auto;
+    padding-bottom: 2%;
     text-align: center;
-    padding-bottom: 1.5%;
   }
 
   // Media Queries
@@ -179,8 +175,7 @@ body {
     @include span-columns(12);
 
     h1 {
-      font-size: $fsize-h1-base * .5;
-      padding-bottom: 0;
+      font-size: $fsize-h1-base * .7;
     }
 
     h2 {
@@ -197,8 +192,7 @@ body {
     @include span-columns(12);
 
     h1 {
-      font-size: $fsize-h1-base * .6;
-      padding-bottom: 0;
+      font-size: $fsize-h1-base * .7;
     }
 
     h2 {
@@ -216,7 +210,6 @@ body {
 
     h1 {
       font-size: $fsize-h1-base * .8;
-      padding-bottom: 0;
     }
 
     h2 {
@@ -234,7 +227,6 @@ body {
 
     h1 {
       font-size: $fsize-h1-base * 1;
-      padding-bottom: 0;
     }
 
     h2 {
@@ -244,5 +236,55 @@ body {
     img {
       width: $imgsize-logo * 1.6;
     }
+  }
+}
+
+.fp-image-block {
+  // Wireframe
+  @include wireframe(10%);
+
+  // Flexbox
+  @include align-items(center);
+  @include display(flex);
+  @include flex-direction(row);
+  @include justify-content(center);
+
+  img {
+    @include display(flex);
+
+    width: 33.33333%;
+  }
+
+    // Media Queries
+  @include media($breakpoint-mobile-small) {
+    @include flex-direction(column);
+
+    img {
+      width: 100%;
+
+      &:first-of-type {
+        display: none;
+      }
+    }
+  }
+
+  @include media($breakpoint-mobile-large) {
+    @include flex-direction(column);
+
+    img {
+      width: 100%;
+
+      &:first-of-type {
+        display: none;
+      }
+    }
+  }
+
+  @include media($breakpoint-desktop-small) {
+
+  }
+
+  @include media($breakpoint-desktop-large) {
+
   }
 }
