@@ -1,0 +1,244 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:700,400,300,100);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+.fp-container {
+  background-color: #e0e0e0;
+  border: 1px solid #9e9e9e;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .fp-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.fp-header {
+  background-color: lightgray;
+  border: 1px solid #919191;
+  padding: 1.5% 0; }
+  .fp-header h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    color: #000;
+    font-size: 1.60181em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase; }
+    .fp-header h1:last-child {
+      margin-right: 0; }
+    .fp-header h1 a:link,
+    .fp-header h1 a:active,
+    .fp-header h1 a:visited,
+    .fp-header h1 a:hover {
+      color: #000;
+      text-decoration: none; }
+  .fp-header img {
+    margin-left: 42.64902%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 1.5%; }
+    .fp-header img:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 400px) {
+    .fp-header {
+      margin-left: 0%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .fp-header:last-child {
+        margin-right: 0; }
+      .fp-header h1 {
+        font-size: 180%;
+        padding-bottom: 0; }
+      .fp-header h2 {
+        font-size: 115%; }
+      .fp-header img {
+        width: 4rem; } }
+  @media screen and (max-width: 800px) and (min-width: 401px) {
+    .fp-header {
+      margin-left: 0%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .fp-header:last-child {
+        margin-right: 0; }
+      .fp-header h1 {
+        font-size: 216%;
+        padding-bottom: 0; }
+      .fp-header h2 {
+        font-size: 115%; }
+      .fp-header img {
+        width: 4.8rem; } }
+  @media screen and (max-width: 1200px) and (min-width: 801px) {
+    .fp-header {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .fp-header:last-child {
+        margin-right: 0; }
+      .fp-header h1 {
+        font-size: 324%;
+        padding-bottom: 0; }
+      .fp-header h2 {
+        font-size: 115%; }
+      .fp-header img {
+        width: 6rem; } }
+  @media screen and (min-width: 1201px) {
+    .fp-header {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .fp-header:last-child {
+        margin-right: 0; }
+      .fp-header h1 {
+        font-size: 360%;
+        padding-bottom: 0; }
+      .fp-header h2 {
+        font-size: 115%; }
+      .fp-header img {
+        width: 6.4rem; } }
+
+.fp-article {
+  background-color: lightgray;
+  border: 1px solid #919191;
+  padding: 1.5% 0; }
+  .fp-article h1 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    color: #000;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    text-transform: none; }
+    .fp-article h1:last-child {
+      margin-right: 0; }
+    .fp-article h1 a:link,
+    .fp-article h1 a:active,
+    .fp-article h1 a:visited,
+    .fp-article h1 a:hover {
+      color: #000;
+      text-decoration: none; }
+  .fp-article img {
+    margin-left: 42.64902%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 1.5%; }
+    .fp-article img:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 400px) {
+    .fp-article {
+      margin-left: 0%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .fp-article:last-child {
+        margin-right: 0; }
+      .fp-article h1 {
+        font-size: 90%;
+        padding-bottom: 0; }
+      .fp-article h2 {
+        font-size: 115%; }
+      .fp-article img {
+        width: 4rem; } }
+  @media screen and (max-width: 800px) and (min-width: 401px) {
+    .fp-article {
+      margin-left: 0%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .fp-article:last-child {
+        margin-right: 0; }
+      .fp-article h1 {
+        font-size: 108%;
+        padding-bottom: 0; }
+      .fp-article h2 {
+        font-size: 115%; }
+      .fp-article img {
+        width: 4.8rem; } }
+  @media screen and (max-width: 1200px) and (min-width: 801px) {
+    .fp-article {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .fp-article:last-child {
+        margin-right: 0; }
+      .fp-article h1 {
+        font-size: 144%;
+        padding-bottom: 0; }
+      .fp-article h2 {
+        font-size: 115%; }
+      .fp-article img {
+        width: 6rem; } }
+  @media screen and (min-width: 1201px) {
+    .fp-article {
+      margin-left: 8.5298%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      .fp-article:last-child {
+        margin-right: 0; }
+      .fp-article h1 {
+        font-size: 180%;
+        padding-bottom: 0; }
+      .fp-article h2 {
+        font-size: 115%; }
+      .fp-article img {
+        width: 6.4rem; } }
+
+/*# sourceMappingURL=style.css.map */
