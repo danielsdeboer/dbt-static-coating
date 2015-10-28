@@ -18,16 +18,10 @@ body {
 }
 
 .fp-container {
-  // Wireframe
-  @include wireframe();
-
   @include outer-container;
 }
 
 .fp-header {
-  // Wireframe
-  @include wireframe(5%);
-
   padding: 1.5% 0;
 
   // Stuff that applies regardless of breakpoint
@@ -137,12 +131,14 @@ body {
 
 
 .fp-article {
-  // Wireframe
-  @include wireframe(5%);
-
-  padding: 1.5% 2%;
+  padding: 0 2%;
+  margin-bottom: 4%;
 
   // Stuff that applies regardless of breakpoint
+  header {
+    padding: 2% 3%;
+  }
+
   h1 {
     color: $color-font-base;
     font-weight: $fweight-normal;
@@ -163,8 +159,23 @@ body {
   h2 {
     @include span-columns(12);
 
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     text-align: center;
+  }
+
+  hr {
+    border: 0;
+    width: 90%;
+
+    &:first-of-type {
+      border-top: 1px solid $color-accent-vibrant;
+      padding-bottom: 1em;
+    }
+
+    &:last-of-type {
+      border-bottom: 1px solid $color-accent-vibrant;
+      padding-top: 1em;
+    }
   }
 
   // Media Queries
@@ -172,16 +183,21 @@ body {
     @include shift(0);
     @include span-columns(12);
 
-    h1 {
-      font-size: $fsize-h1-base * .7;
-    }
+    header {
+      @include shift(0);
+      @include span-columns(12);
 
-    h2 {
-      font-size: $fsize-h2-base;
-    }
+      h1 {
+        font-size: $fsize-h1-base * .7;
+      }
 
-    img {
-      width: $imgsize-logo;
+      h2 {
+        font-size: $fsize-h2-base;
+      }
+
+      img {
+        width: $imgsize-logo;
+      }
     }
   }
 
@@ -189,16 +205,21 @@ body {
     @include shift(0);
     @include span-columns(12);
 
-    h1 {
-      font-size: $fsize-h1-base * .7;
-    }
+    header {
+      @include shift(1);
+      @include span-columns(10);
 
-    h2 {
-      font-size: $fsize-h2-base;
-    }
+      h1 {
+        font-size: $fsize-h1-base * .7;
+      }
 
-    img {
-      width: $imgsize-logo * 1.2;
+      h2 {
+        font-size: $fsize-h2-base;
+      }
+
+      img {
+        width: $imgsize-logo * 1.2;
+      }
     }
   }
 
@@ -238,9 +259,6 @@ body {
 }
 
 .fp-image-block {
-  // Wireframe
-  @include wireframe(10%);
-
   img {
     width: 100%;
   }
@@ -278,9 +296,6 @@ body {
 }
 
 .fp-article-text {
-  // Wireframe
-  @include wireframe(10%);
-
   padding: 1em .8em;
 
   p,
@@ -336,8 +351,7 @@ body {
 }
 
 .fp-image-block-coatings {
-  // Wireframe
-  @include wireframe(10%);
+  padding-top: 2%;
 
   // Media Queries
   @include media($breakpoint-mobile-small) {
@@ -385,10 +399,11 @@ body {
   @include shift(1);
   @include span-columns(10);
 
-  border-top: 1px solid $color-accent;
+  border-top: 1px solid $color-accent-vibrant;
   text-align: center;
+  margin-bottom: 2%;
   margin-top: 2.5%;
-  padding: 1%;
+  padding: 2.5%;
 
   h1 {
     font-size: $fsize-h1-base * .8;
